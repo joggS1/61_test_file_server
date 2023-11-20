@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "buildCommand": "npm run build",
   "functions": {
     "api/server.js": {
       "memory": 3008

@@ -3,7 +3,7 @@
     "scripts": {
         "start": "npm run build && nodemon --watch \"src/**/*.ts\" -e ts,json --exec \"ts-node --transpile-only ./src/server.ts\"",
         "test": " tsc && node ./dist/tests/",
-        "build": "tsc && npm run build:documentation",
+        "build": "tsc",
         "format": "prettier --write src/*"
     },
     "devDependencies": {

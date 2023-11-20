@@ -1,6 +1,11 @@
 {
   "version": 2,
   "buildCommand": "npm run build",
+  "functions": {
+    "dist/server.js": {
+      "memory": 3008
+    }
+  },
   "builds": [
       {
           "src": "dist/server.js",

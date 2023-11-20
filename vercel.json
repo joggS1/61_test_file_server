@@ -2,7 +2,7 @@
   "version": 2,
   "buildCommand": "npm run build",
   "functions": {
-    "./dist/server.js": {
+    "api/server.js": {
       "memory": 3008
     }
   }

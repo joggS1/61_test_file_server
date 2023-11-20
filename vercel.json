@@ -4,7 +4,7 @@
   "functions": {
     "dist/server.js": {
       "memory": 3008,
-      "maxDuration": 1000
+      "maxDuration": 900
     }
   },
   "builds": [

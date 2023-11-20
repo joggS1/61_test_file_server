@@ -7,7 +7,7 @@ import fs from 'fs'
 export default async (req: Request<{}, {}, {}, {fileName: string }>, res: Response<EchoMessage>, next: NextFunction) => {
     try {
         const file = FileService.getFile(req.query.fileName);
-        await ApiResponseHandler.success(req, res, fs.readFileSync(file!, {encoding: 'utf-8'}));
+        await ApiResponseHandler.success(req, res, fs.readFileSync(file!, {encoding: 'binary'}));
         // res.sendFile(file!);
     } catch (error) {
         await ApiResponseHandler.error(req, res, error);

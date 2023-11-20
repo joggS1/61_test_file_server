@@ -2,7 +2,6 @@ import { Request, Response, NextFunction } from 'express';
 
 export async function logMiddleware(req: Request, res: Response, next: NextFunction) {
     try {
-        
         console.log(
             `${req.method}` +
                 '\n' +

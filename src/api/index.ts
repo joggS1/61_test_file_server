@@ -17,13 +17,10 @@ app.use(logMiddleware);
 
 app.use(bodyParser.json());
 
-
-
 //-------------------HTTP api---------------------
 
 const routes = express.Router();
 require('./http/file').default(routes);
-
 
 app.use('/api', routes);
 

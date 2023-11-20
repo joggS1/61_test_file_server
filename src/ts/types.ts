@@ -3,10 +3,10 @@
 //------------------------------------------------------------/
 
 export type ExampleMessage = {
-    message: string,
-    date: string
-}
+    message: string;
+    date: string;
+};
 
 export type EchoMessage = {
-    isEcho: boolean
+    isEcho: boolean;
 } & ExampleMessage;

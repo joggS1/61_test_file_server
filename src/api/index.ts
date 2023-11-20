@@ -24,6 +24,9 @@ require('./http/file').default(routes);
 
 app.use('/api', routes);
 
+app.get('/', (req, res) => {
+    res.status(200).json('Server started')
+})
 //------------------------------------------------
 
 export default app;
